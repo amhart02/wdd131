@@ -33,16 +33,16 @@ ol{
 }
 img{
     width: 150px;
-    justify-content: center;
+    margin-left: 225px;
 }
 body{
     width: 600px;
     height: auto;
     border: 1px solid #CCCCCC;
     padding-top: 50px;
-    padding-bottom: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
     margin-left: auto;
     margin-right: auto;
 }
