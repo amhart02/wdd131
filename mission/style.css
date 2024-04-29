@@ -1,25 +1,52 @@
 h1{
     text-align: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
 }
 h2{
     text-align: center;
-    text-transform: capitalize;
-    color: #006EB6
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #006EB6;
+    border-bottom: 1px solid #CCCCCC;
+    
 }
 p{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+    line-height: 1.5;
 }
 p em{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 20px;
+    line-height: 1.5;
 }
 ol{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+    line-height: 1.5;
 }
 img{
-    width: 150px
+    width: 150px;
+    justify-content: center;
+}
+body{
+    width: 600px;
+    height: auto;
+    border: 1px solid #CCCCCC;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+main{
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
