@@ -1,0 +1,30 @@
+body {
+  font-style: "Roboto";
+}
+
+header,
+main,
+footer {
+  max-width: 640px;
+  margin: 1rem auto;
+  border: 1px solid #cccccc;
+  padding: 1rem;
+  background-color: rgb(113, 113, 180);
+}
+
+main {
+  display: flex;
+  flex: 1;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+section {
+  padding: 1rem;
+  background-color: white;
+}
+
+header {
+  background-color: black;
+  color: white;
+}
