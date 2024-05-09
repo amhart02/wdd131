@@ -2,8 +2,15 @@ body {
   font-style: "Roboto";
 }
 
-header,
-main,
+header {
+  max-width: 640px;
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: #000; /* Black background color */
+  color: #fff; /* White text color */
+} 
+
 footer {
   max-width: 640px;
   margin: 1rem auto;
@@ -13,10 +20,14 @@ footer {
 }
 
 main {
-  display: flex;
-  flex: 1;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  max-width: 640px;
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: rgb(113, 113, 180); /* Blueish background color */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Single column by default */
+  gap: 1rem; /* Equal gap */
 }
 
 section {
@@ -24,7 +35,17 @@ section {
   background-color: white;
 }
 
-header {
-  background-color: black;
-  color: white;
+.container {
+  max-width: 640px;
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: #e0e9f0; /* Blueish background color */
+}
+
+/* Media Query for viewport width 500px or greater */
+@media screen and (min-width: 500px) {
+  .container {
+      max-width: 100%; /* Adjust as necessary */
+  }
 }
