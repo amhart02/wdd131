@@ -16,6 +16,16 @@
         padding-left: 25px;
         padding-right: 25px;
     }
+    .menu-button{
+        display: none;
+    }
+    .viewer{
+        margin: 20px;
+    }
+    .viewer-picture{
+        height: 400px;
+        width: auto;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -33,6 +43,16 @@
     header, main, footer{
         padding-left: 200px;
         padding-right: 200px;
+    }
+    .menu-button{
+        display: none;
+    }
+    .viewer{
+        margin: 40px;
+    }
+    .viewer-picture{
+        height: 550px;
+        width: auto;
     }
 }
 
@@ -78,7 +98,7 @@ main{
     background-color: rgb(210, 210, 210);
 }
 
-img{
+.gallery img{
     height: 250px;
     width: 250px;
     object-fit: cover;
@@ -109,3 +129,43 @@ h4{
     margin: 0;
 }
 
+.menu-button{
+    background-color: #52489c;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ebebeb;
+}
+
+button:hover{
+    color: #f45b69;
+}
+
+.hide{
+    display: none;
+}
+
+.viewer{
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: grid;
+}
+
+.viewer-picture{
+
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.close-viewer{
+    background: none;
+    color: #ebebeb;
+    font-size: 20px;
+    border: none;
+    text-align: right;
+}
