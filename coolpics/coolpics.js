@@ -41,4 +41,4 @@ function viewHandler(event) {
 menuButton.addEventListener("click", toggleMenu);
 window.addEventListener("resize", handleResize);
 picture.addEventListener("click", viewHandler);
-
+handleResize();
