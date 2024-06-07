@@ -2,8 +2,8 @@ const menuButton = document.querySelector(".menu-button");
 const picture = document.querySelector(".gallery");
 
 function toggleMenu() {
-  const menu = document.querySelector(".menu");
-  menu.classList.toggle("hide");
+    const menu = document.querySelector(".menu");
+    menu.classList.toggle("hide");
 }
 
 function handleResize() {

@@ -1,0 +1,116 @@
+#creditCard{
+    display: grid;
+    height: 300px;
+    width: 400px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr 1.5fr;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .8em;
+}
+#cardFront{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-color: rgb(222, 219, 219);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px rgb(171, 171, 171);
+    z-index: 5;
+    padding: 20px;
+    align-items: end;
+}
+#cardFront p{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+}
+img{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: end;
+}
+#cardNumberDiv{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+#cardNumberLabel{
+    align-self: end;
+}
+#cardNumber{
+    height: 25px;
+}
+#cardHolderDiv{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-top: 20px;
+}
+#cardHolder{
+    height: 25px;
+    width: 90%;
+}
+#expirationDiv{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#expirationLabel{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+#expirationM{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 40px;
+    height: 25px;
+}
+#expirationY{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 40px;
+    height: 25px;
+}
+#cardBack{
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
+    grid-template-rows: 1.5fr 1fr;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    background-color: rgb(222, 219, 219);
+    border-radius: 5px;
+}
+#cardBack p{
+    background-color: rgb(55, 55, 55);
+    height: 45px;
+    margin-top: 25px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+#cvc-cvvDiv{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-content: center;
+}
+#cvc-cvv{
+    width: 45px;
+    height: 20px;
+    grid-column: 2/3;
+}
+#cvc-cvvLabel{
+    grid-column: 2/3;
+    align-self: end;
+    height: 20px;
+}
+button{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    margin: 10% 7.5%;
+    border-radius: 5px;
+}
