@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --primary-color: #306BAC;
+    --secondary-color: #ECCBD9;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica,sans-serif;
+    --secondary-font: "Playfair Display", serif;
+    }
+body{
+    font-family: Arial, Helvetica,sans-serif;
+}
+img{
+    max-width: 100%;
+}
+h1{
+    font-family: "Playfair Display", serif;
+}
+h2{
+    font-family: "Playfair Display", serif;
+    color: var(--primary-color);
+}
+.logo-and-title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5%;
+}
+#logo{
+    width: 25%;
+}
+.search{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin: 5% 5%;
+    margin-left: 7%;
+}
+#searchbutton{
+    border: 1px solid var(--text-dark);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 40%;
+    padding: 5%
+}
+#search-bar{
+    border: 1px solid var(--text-dark);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.social a{
+    width: 15%;
+    margin: 0 1%;
+}
+#flaticon{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: .9em;
+    display: block;
+    text-align: center;
+    flex: 0 0 100%;
+}
+#flaticon:hover{
+    color: var(--secondary-color);
+}
+.recipe-card{
+    border: 1px solid var(--text-dark);
+    border-radius: 5px;
+    padding: 5%;
+    margin: 5%;
+}
+footer{
+    margin-top: 10%;
+}
+.tag{
+    border: 1px solid var(--text-dark);
+    padding: 1%;
+    width: 55px;
+}
+.description{
+    display: none;
+}
+main{
+    border-top: solid 1px grey;
+}
+.recipe-img{
+    width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+    #logo{
+        width: 10%;
+    }
+    .search{
+        width: 100%;
+    }
+    #searchbutton{
+        width: 10%;
+    }
+    header{
+        margin-bottom: 2.5%;
+    }
+    #search-bar{
+        font-size: 1.5em;
+    }
+    .recipe-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.5fr 3fr;
+    }
+    .tag, .recipe-name, .rating, .description{
+        grid-column: 2/3;
+        margin-left: 5%;
+    }
+    .description{
+        display: block;
+        font-size: 1.5em;
+    }
+    .recipe-img{
+        grid-row: 1/5;
+        justify-self: center;
+    }
+    .rating{
+        margin-bottom: 2%;
+    }
+    .social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    #flaticon {
+        align-self: center;
+        margin-right: auto;
+        flex: none;
+        order: -1;
+        width: auto;
+    }
+    .social a {
+        width: 5%;
+        align-self: center;
+    }
+    footer{
+        margin-top: 5%;
+    }
+}

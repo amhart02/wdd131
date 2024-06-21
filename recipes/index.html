@@ -7,36 +7,50 @@
     <link rel="stylesheet" href="recipes.css">
     <script src="recipes.mjs"></script>
     <script src="main.js"></script>
+    <meta property="og:title" content="Page Title">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Page Description">
+    <meta property="og:image" content="URL to an image">
+    <meta property="og:url" content="URL of the page">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
     <header>
-        <img src="images/recipe-book.png" alt="Recipe Book Logo">
-        <h1>RECIPEBOOK</h1>
+        <section class="logo-and-title">
+            <img id="logo" src="images/recipe-book.png" alt="Recipe Book Logo">
+            <h1>RECIPEBOOK</h1>
+        </section>
+        <form class="search">
+            <input id="search-bar" type="text" placeholder="Find a recipe">
+            <img id="searchbutton" src="images/search.svg" alt="search button">
+        </form>
     </header>
     <main>
-        <section class="search">
-
+        <section class="recipe-card">
+            <img class="recipe-img" src="images/apple-crisp.jpg" alt="Apple Crisp">
+            <p class="tag">dessert</p>
+            <h2 class="recipe-name">Apple Crisp</h2>
+            <span
+                class="rating"
+                role="img"
+                aria-label="Rating: 4 out of 5 stars"
+            >
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">☆</span>
+            </span>
+            <p class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
         </section>  
-        <span
-            class="rating"
-            role="img"
-            aria-label="Rating: 4 out of 5 stars"
-        >
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star-empty">⭐</span>
-            <span aria-hidden="true" class="icon-star-empty">☆</span>
-        </span>
     </main> 
     <footer>
-        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
         <div class="social">
             <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
             <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
             <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
             <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
-            <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+            <a id="flaticon" href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
         </div>
     </footer>
 </body>
