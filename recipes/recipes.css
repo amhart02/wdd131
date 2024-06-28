@@ -75,6 +75,7 @@ h2{
     border-radius: 5px;
     padding: 5%;
     margin: 5%;
+    max-height: fit-content;
 }
 footer{
     margin-top: 10%;
@@ -120,6 +121,7 @@ main{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 0.5fr 3fr;
         max-height: 400px;
+        padding: 2.5%;
     }
     .tag, .recipe-name, .rating, .description{
         grid-column: 2/3;
@@ -127,11 +129,13 @@ main{
     }
     .description{
         display: block;
-        font-size: 1em;
+        font-size: 1.5em;
     }
     .recipe-img{
         grid-row: 1/5;
         justify-self: center;
+        width: auto;
+        height: 100%;
     }
     .rating{
         margin-bottom: 2%;
@@ -157,6 +161,6 @@ main{
         margin-top: 5%;
     }
     .recipe-name{
-        font-size: 1.25em;
+        font-size: 2em;
     }
 }
