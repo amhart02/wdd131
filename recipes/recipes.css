@@ -82,7 +82,8 @@ footer{
 .tag{
     border: 1px solid var(--text-dark);
     padding: 1%;
-    width: 55px;
+    margin-right: 5%;
+    text-align: center;
 }
 .description{
     display: none;
@@ -93,8 +94,12 @@ main{
 .recipe-img{
     width: 100%;
 }
+.tags{
+    display: flex;
+    flex-direction: row;
+}
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 500px) {
     #logo{
         width: 10%;
     }
@@ -114,6 +119,7 @@ main{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 0.5fr 3fr;
+        max-height: 400px;
     }
     .tag, .recipe-name, .rating, .description{
         grid-column: 2/3;
@@ -121,7 +127,7 @@ main{
     }
     .description{
         display: block;
-        font-size: 1.5em;
+        font-size: 1em;
     }
     .recipe-img{
         grid-row: 1/5;
@@ -149,5 +155,8 @@ main{
     }
     footer{
         margin-top: 5%;
+    }
+    .recipe-name{
+        font-size: 1.25em;
     }
 }
