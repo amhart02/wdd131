@@ -119,7 +119,6 @@ main{
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr 0.5fr 3fr;
-        max-height: 400px;
         padding: 2.5%;
     }
     .tag, .recipe-name, .rating, .description{
@@ -136,6 +135,7 @@ main{
         justify-self: center;
         height: 100%;
         width: auto;
+        object-fit: cover;
     }
     .rating{
         margin-bottom: 2%;
