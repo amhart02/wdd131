@@ -75,7 +75,6 @@ h2{
     border-radius: 5px;
     padding: 5%;
     margin: 5%;
-    max-height: fit-content;
 }
 footer{
     margin-top: 10%;
@@ -100,7 +99,7 @@ main{
     flex-direction: row;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width:900px) {
     #logo{
         width: 10%;
     }
@@ -129,13 +128,13 @@ main{
     }
     .description{
         display: block;
-        font-size: 1.5em;
+        font-size: 1.em;
     }
     .recipe-img{
         grid-row: 1/5;
         justify-self: center;
-        width: auto;
         height: 100%;
+        width: auto;
     }
     .rating{
         margin-bottom: 2%;
@@ -161,6 +160,6 @@ main{
         margin-top: 5%;
     }
     .recipe-name{
-        font-size: 2em;
+        font-size: 1.5em;
     }
 }
