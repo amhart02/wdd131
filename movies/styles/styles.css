@@ -31,7 +31,7 @@ nav{
     justify-content: space-around;
     align-items: center;
 }
-.my-favorite-movies{
+.my-favorite-movies, .movie-trivia{
     color: white;
     font-family: var(--heading-font);
     text-align: center;
@@ -65,6 +65,9 @@ img{
     width: 80%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    font-family: var(--paragraph-font);
+    font-size: 1.75em;
+    padding-left: 20px;
 }
 .search-button{
     color: white;
@@ -94,7 +97,7 @@ img{
     font-family: var(--paragraph-font);
     margin-top: 15px;
 }
-.genres{
+.genre{
     font-family: var(--paragraph-font);
     font-size: 1.1em;
 }
@@ -163,7 +166,7 @@ footer .logo{
     .hero-img{
         height: 400px;
     }
-    .my-favorite-movies{
+    .my-favorite-movies, .movie-trivia{
         font-size: 5em;
     }
     .movie-trivia-link{
@@ -172,35 +175,20 @@ footer .logo{
     .input-section{
         height: 50px;
     }
-    .movie-section{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(1fr, 4);
-    }
     .movie-poster{
-        grid-column: 1/2;
-        grid-row: 1/5;
         align-self: center;
     }
     .movie-title{
         font-size: 3em;
-        grid-column: 2/3;
-        grid-row: 1/2;
     }
     .release-year{
         font-size: 1.5em;
-        grid-column: 2/3;
-        grid-row: 2/3;
     }
-    .genres{
+    .genre{
         font-size: 1.5em;
-        grid-column: 2/3;
-        grid-row: 3/4;
     }
     .description{
         font-size: 1.5em;
-        grid-column: 2/3;
-        grid-row: 4/5;
     }
     footer{
         display: grid;
