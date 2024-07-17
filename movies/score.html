@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Trivia</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <script type="module" src="maintrivia.js" defer></script>
+    <script type="module" src="mainscore.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,21 +14,9 @@
             <a href="movietrivia.html" class="movie-trivia-link">Movie Trivia</a>
         </nav>
     </header>
-    <main>
-        <section class="hero">
-            <h1 class="movie-trivia">Movie Trivia</h1>
-            <img class="hero-img" src="images/hero-image-movie-trivia.png" alt="hero img">
-        </section>
-
-        <form>
-            <div class="trivia-questions">
-                
-            </div>
-            <div class="submit-button-div">
-                <button class="submit-button" type="submit">Submit</button>
-            </div>
-        </form>
-
+    <main class="score-main">
+        <h1 class="congratulations">Congratulations, you completed the movie trivia quiz!</h1>
+        <p class="score">Your score is: <span id="score"></span></p>
     </main>
     <footer>
         <p class="contact">Contact Me</p>
