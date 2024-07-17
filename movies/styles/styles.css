@@ -202,6 +202,23 @@ form{
 .trivia-answer{
     padding: 5px;
 }
+.submit-button-div{
+    display: grid;
+}
+.submit-button{
+    justify-self: center;
+    margin-bottom: 30px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: var(--heading-font);
+    border: none;
+    border-radius: 2px;
+    width: 20%;
+    height: 50%;
+}
+.submit-button:hover{
+    color: #EFA00B;
+}
 
 @media screen and (min-width: 750px) {
     .hero-img{
@@ -279,9 +296,18 @@ form{
     form{
         margin: 100px;
         padding: 20px 50px;
+        border: solid var(--accent1-color)3px;
     }
     .answers{
         padding-bottom: 50px;
+        border-bottom: solid var(--secondary-color) 3px;
+    }
+    .submit-button{
+        margin-bottom: 100px;
+        width: 30%;
+        height: 50%;
+        font-size: 2em;
+        border-radius: 10px;
     }
 }
     
@@ -299,14 +325,22 @@ form{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    form{
-        margin: 50px 350px;
-        padding: 20px 100px;
+    .submit-button{
+        margin-bottom: 150px;
+        margin-top: 50px;
+        width: 20%;
+        height: 40%;
+        font-size: 3em;
+        border-radius: 10px;
     }
 }
 
 @media screen and (min-width: 1500px) {
     .movie-gallery{
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    form{
+        margin: 50px 350px;
+        padding: 20px 200px;
     }
 }
