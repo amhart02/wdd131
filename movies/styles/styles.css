@@ -43,7 +43,7 @@ nav{
 }
 .hero-img{
     object-fit: cover;
-    object-position: bottom center;
+    object-position: top center;
     height: 250px;
     grid-column: 1/2;
     grid-row: 1/2;
