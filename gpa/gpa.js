@@ -6,9 +6,9 @@ function getGrades(inputSelector) {
     return gradesMap;
     }    
 function lookupGrade(grade) {
-    let point = 0
+    let points = 0
     if (grade === "A") {
-        point = 4;
+        points = 4;
     } else if (grade === "B") {
         points = 3;
     } else if (grade === "C") {
@@ -25,11 +25,13 @@ function calculateGpa(grades) {
     }   
 function outputGpa(gpa, selector) {
     const outputElement = document.querySelector(selector);
-    outputElement.innerText = gpa;
+    outputElement.innerHTML = gpa;
     }    
 function clickHandler() {
     const grades = getGrades("#grades");
     const gpa = calculateGpa(grades);
     outputGpa(gpa, "#output")
-    }
-document.querySelector("#submitButton")
+}
+
+document.querySelector("#submitButton").addEventListener("click", clickHandler);
+

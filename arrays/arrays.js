@@ -35,6 +35,7 @@ const fruits = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
 const filterFruit = fruits.filter(function (fruit) {
     return fruit.length < 6;
 });
+console.log(filterFruit[0]);
 //example 5
 const numbers = [12, 34, 21, 54];
 const luckyNumber = 21;

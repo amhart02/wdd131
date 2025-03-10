@@ -38,3 +38,7 @@ let participantCount = 1;
 
     form.addEventListener('submit', submitForm);
 });
+
+const info = {
+    adult_naem
+}

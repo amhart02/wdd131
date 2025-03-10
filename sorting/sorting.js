@@ -67,7 +67,7 @@ const hikes = [
    // a must be equal to b
     return 0;
   }
-  const anotherSort = simpleList.sort(compareFn)
+  const anotherSort = simpleList.sort(compareFunction);
 
   function searchList(list, query){
     function searchCallback(string){

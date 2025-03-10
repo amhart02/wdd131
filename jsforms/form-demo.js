@@ -65,7 +65,6 @@ function validateForm(event) {
     const html = errors.map((error) => `<p>${error}</p>`);
     errorEl.innerHTML = html.join("");
   }
+  
   // attach a change event handler to the paymentMethod input
-  document
-  .querySelector("#paymentMethod")
-  .addEventListener("change", togglePaymentDetails);
+  document.querySelector("#paymentMethod").addEventListener("change", togglePaymentDetails);
